@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.mainActivity.MainActivity"
+    android:id="@+id/root_layout"
+    android:background="@drawable/gradient_animation"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/gradientEnd"
+        android:shadowRadius="1"
+        android:text="@string/my_tasks"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"/>
+
+    <ListView
+        android:id="@+id/main_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tasks_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickAllTasks"
+            android:text="@string/all_tasks"
+            android:background="@drawable/drawable_button"
+            android:textColor="@color/gradientEnd"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickSignOut"
+            android:text="@string/sing_out"
+            android:background="@drawable/drawable_button"
+            android:textColor="@color/gradientEnd"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginVertical="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickNewTask"
+            android:text="@string/new_task"
+            android:background="@drawable/drawable_button"
+            android:textColor="@color/gradientEnd"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

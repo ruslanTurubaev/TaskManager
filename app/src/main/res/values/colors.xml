@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_semitransparent">#80FFFFFF</color>
+    <color name="gradientStart">#F3C843</color>
+    <color name="gradientMiddle">#F67831</color>
+    <color name="gradientEnd">#FF1493</color>
+</resources>
